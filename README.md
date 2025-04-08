@@ -50,6 +50,8 @@ If you have an older `kilosort` environment you can remove it with `conda env re
 6. Instead of 5, you can install the minimal version of kilosort with `python -m pip install kilosort`.  
 7. Next, if the CPU version of pytorch was installed (will happen on Windows), remove it with `pip uninstall torch`
 8. Then install the GPU version of pytorch `conda install pytorch pytorch-cuda=11.8 -c pytorch -c nvidia`
+9. MML edit: Needed to run an extra line to properly install pytorch on Ubuntu 20.04.6 with Miniconda3: `pip install torch torchvision torchaudio`
+
 
 Note you will always have to run `conda activate kilosort` before you run kilosort. If you want to run jupyter notebooks in this environment, then also `conda install jupyter` or `pip install notebook`, and `python -m pip install matplotlib`.
 
